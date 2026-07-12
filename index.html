@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CYBERPODIUM | Learn AWS & Cloud Computing</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#07111f;
+    color:white;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:rgba(7,17,31,.95);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    z-index:1000;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#00d4ff;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00d4ff;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 20px 80px;
+    background:
+    radial-gradient(circle at top,#00d4ff33,transparent 40%),
+    linear-gradient(135deg,#07111f,#0d2b4f,#07111f);
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#00d4ff;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    color:#d6d6d6;
+    font-size:18px;
+}
+
+.buttons{
+    margin-top:35px;
+}
+
+.btn{
+    display:inline-block;
+    margin:10px;
+    padding:15px 28px;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.primary{
+    background:#00d4ff;
+    color:black;
+}
+
+.secondary{
+    border:2px solid #00d4ff;
+    color:white;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:40px;
+    color:#00d4ff;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#101b30;
+    border-radius:16px;
+    padding:30px;
+    transition:.3s;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,212,255,.15);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#00d4ff;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    text-align:center;
+}
+
+.stat{
+    background:#101b30;
+    padding:30px;
+    border-radius:15px;
+}
+
+.stat h2{
+    color:#00d4ff;
+    font-size:42px;
+}
+
+.tech{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+}
+
+.tech span{
+    background:#101b30;
+    padding:12px 22px;
+    border-radius:30px;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+footer{
+    text-align:center;
+    padding:40px 20px;
+    background:#050b15;
+    margin-top:40px;
+    color:#bbb;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    display:inline-block;
+    margin:8px;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">CYBERPODIUM</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#courses">Courses</a>
+<a href="#tech">Tech</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Master <span>AWS</span>, Cloud & DevOps</h1>
+
+<p>
+
+Learn AWS, Python, DevOps, Linux, Automation, AI and Cloud Computing through practical tutorials,
+real-world projects and interview preparation.
+
+</p>
+
+<div class="buttons">
+
+<a class="btn primary" href="#">Start Learning</a>
+
+<a class="btn secondary" href="#">YouTube Channel</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">Why CYBERPODIUM?</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Beginner Friendly</h3>
+<p>Simple explanations in Hindi with hands-on practical demonstrations.</p>
+</div>
+
+<div class="card">
+<h3>Industry Projects</h3>
+<p>Learn by building real cloud solutions using AWS services.</p>
+</div>
+
+<div class="card">
+<h3>Interview Preparation</h3>
+<p>AWS interview questions, coding examples and certification guidance.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Our Numbers</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h2>100+</h2>
+<p>Tutorial Videos</p>
+</div>
+
+<div class="stat">
+<h2>20+</h2>
+<p>Hands-on Projects</p>
+</div>
+
+<div class="stat">
+<h2>10+</h2>
+<p>Learning Paths</p>
+</div>
+
+<div class="stat">
+<h2>24×7</h2>
+<p>Learning Support</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="courses">
+
+<h2 class="section-title">Featured Courses</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>AWS Beginner Course</h3>
+<p>Complete AWS from scratch including EC2, S3, IAM, Lambda, VPC and more.</p>
+</div>
+
+<div class="card">
+<h3>Python Programming</h3>
+<p>Python basics to automation with practical examples.</p>
+</div>
+
+<div class="card">
+<h3>DevOps Roadmap</h3>
+<p>Docker, Kubernetes, CI/CD, Terraform and Infrastructure as Code.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="tech">
+
+<h2 class="section-title">Technologies</h2>
+
+<div class="tech">
+
+<span>AWS</span>
+<span>Python</span>
+<span>Linux</span>
+<span>Docker</span>
+<span>Kubernetes</span>
+<span>Terraform</span>
+<span>CloudFormation</span>
+<span>Git</span>
+<span>DevOps</span>
+<span>AI</span>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Join CYBERPODIUM</h2>
+
+<div class="card" style="max-width:700px;margin:auto;text-align:center;">
+
+<p style="margin-bottom:20px">
+
+Subscribe to our YouTube channel and follow us for the latest AWS tutorials,
+cloud projects and technology updates.
+
+</p>
+
+<a class="btn primary" href="#">Visit YouTube</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3 style="color:#00d4ff;margin-bottom:10px;">CYBERPODIUM</h3>
+
+<p>Learn • Build • Innovate</p>
+
+<br>
+
+<p>© 2026 CYBERPODIUM. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
