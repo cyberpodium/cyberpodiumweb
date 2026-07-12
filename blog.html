@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Blog Feed | CYBERPODIUM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+    
+    <!-- Navbar -->
+    <nav class="navbar" id="mainNavbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">CYBER<span class="gradient-text">PODIUM</span></a>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="tutorials.html" class="nav-link">Tutorials</a>
+                <a href="blog.html" class="nav-link active">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+                <button class="hamburger-menu" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="subpage-wrapper container">
+        <div class="section-header text-center">
+            <h1 class="section-title">The Engineering Logbooks</h1>
+            <p class="section-subtitle">Deep dive systems essays exploring performance, architectural validation patterns, and modern tooling shifts.</p>
+        </div>
+
+        <div class="grid-3 row-gap-30">
+            <!-- Blog Card 1 -->
+            <article class="blog-card glass-card">
+                <div class="card-img-container"><div class="fallback-gradient-bg bg-devops"></div></div>
+                <div class="card-body">
+                    <span class="blog-date">March 14, 2026</span>
+                    <h3>The Hidden Engineering Debt of Abstracted Cloud Platforms</h3>
+                    <p>Why modern development pipelines require structural understanding of under-the-hood bare metal operations over blind platform reliance.</p>
+                    <a href="blog.html" class="gradient-text read-more-link">Read Log Entry &rarr;</a>
+                </div>
+            </article>
+            <!-- Blog Card 2 -->
+            <article class="blog-card glass-card">
+                <div class="card-img-container"><div class="fallback-gradient-bg bg-infra"></div></div>
+                <div class="card-body">
+                    <span class="blog-date">February 28, 2026</span>
+                    <h3>Securing Terraform State Files Across Multi-Tenant Providers</h3>
+                    <p>An explicit analysis of remote state locks configurations, IAM isolation policies, and avoiding sensitive secrets leaks.</p>
+                    <a href="blog.html" class="gradient-text read-more-link">Read Log Entry &rarr;</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 CYBERPODIUM. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

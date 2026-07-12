@@ -1,0 +1,44 @@
+/* ==========================================================================
+   PRODUCTION KEYFRAMES ENGINE MATRIX
+   ========================================================================== */
+
+@keyframes floatY {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Scroll Trigger Active Utility Classes */
+.reveal-fade {
+    opacity: 0;
+    transform: scale(0.96);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-fade.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.reveal-slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-slide-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Button Pulse Telemetry Animation */
+.ripple {
+    position: relative;
+    overflow: hidden;
+}

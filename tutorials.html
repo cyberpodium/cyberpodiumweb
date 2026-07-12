@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Matrix | CYBERPODIUM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+    
+    <!-- Navbar -->
+    <nav class="navbar" id="mainNavbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">CYBER<span class="gradient-text">PODIUM</span></a>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="tutorials.html" class="nav-link active">Tutorials</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+                <button class="hamburger-menu" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="subpage-wrapper container">
+        <div class="section-header text-center">
+            <h1 class="section-title">Streamed Knowledge Nodes</h1>
+            <p class="section-subtitle">Deep dive code walkthroughs and video breakdowns for immediate system replication.</p>
+        </div>
+
+        <div class="grid-3 row-gap-30">
+            <!-- Youtube Style Tutorial Card 1 -->
+            <div class="tutorial-video-card glass-card">
+                <div class="video-thumbnail-placeholder">
+                    <i class="fa-brands fa-youtube video-play-overlay"></i>
+                    <span class="video-timestamp">45:12</span>
+                </div>
+                <div class="card-body">
+                    <h3>Docker Architecture: Overcoming Storage Bottlenecks</h3>
+                    <p>Demystifying anonymous layer volumes, dangling images cleanup routines, and optimized cache layers configuration sequences.</p>
+                    <a href="https://youtube.com" target="_blank" class="btn btn-secondary btn-small margin-top-15">Watch Lab Sequence</a>
+                </div>
+            </div>
+            <!-- Youtube Style Tutorial Card 2 -->
+            <div class="tutorial-video-card glass-card">
+                <div class="video-thumbnail-placeholder">
+                    <i class="fa-brands fa-youtube video-play-overlay"></i>
+                    <span class="video-timestamp">1:15:40</span>
+                </div>
+                <div class="card-body">
+                    <h3>AWS EKS Clusters Troubleshooting Playbook</h3>
+                    <p>Step-by-step diagnostic workflows correcting common CoreDNS scheduling errors, IAM node identity issues, and VPC subnets limitations.</p>
+                    <a href="https://youtube.com" target="_blank" class="btn btn-secondary btn-small margin-top-15">Watch Lab Sequence</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 CYBERPODIUM. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

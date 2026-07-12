@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Terminal | CYBERPODIUM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+    
+    <!-- Navbar -->
+    <nav class="navbar" id="mainNavbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">CYBER<span class="gradient-text">PODIUM</span></a>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="tutorials.html" class="nav-link">Tutorials</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+                <button class="hamburger-menu" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="subpage-wrapper container">
+        <div class="section-header text-center">
+            <h1 class="section-title">Open a Support Vector Ticket</h1>
+            <p class="section-subtitle">Submit configuration questions or corporate enterprise training requests directly to our deck.</p>
+        </div>
+
+        <div class="grid-2 alignment-start">
+            <!-- Contact Data Indicators -->
+            <div class="glass-card padded-large">
+                <h3>Terminal Connection Data</h3>
+                <p class="margin-bottom-30">Our system routing operations remain active around the clock. Connect directly via asynchronous lines below.</p>
+                <div class="contact-indicator-item">
+                    <i class="fa-solid fa-envelope-open text-glow-blue"></i>
+                    <div>
+                        <h4>Operations Pipeline Email Address</h4>
+                        <p class="small-text-muted">ops@cyberpodium.com</p>
+                    </div>
+                </div>
+                <div class="contact-indicator-item margin-top-20">
+                    <i class="fa-solid fa-network-wired text-glow-purple"></i>
+                    <div>
+                        <h4>Discord Cluster Support</h4>
+                        <p class="small-text-muted">chat.cyberpodium.com/invite</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interceptive Reactive Contact Form -->
+            <div class="glass-card padded-large">
+                <form id="contactTerminalForm" class="contact-form-layout">
+                    <div class="form-group-block">
+                        <label class="form-field-label">Engineer Name</label>
+                        <input type="text" id="contactName" required class="form-input" placeholder="e.g., Linus Torvalds">
+                        <span class="field-error-message" id="nameError">Name formatting unrecognized</span>
+                    </div>
+                    <div class="form-group-block margin-top-15">
+                        <label class="form-field-label">Target Routing Address (Email)</label>
+                        <input type="email" id="contactEmail" required class="form-input" placeholder="linus@linuxfoundation.org">
+                        <span class="field-error-message" id="emailError">Email address structure missing structural symbols</span>
+                    </div>
+                    <div class="form-group-block margin-top-15">
+                        <label class="form-field-label">Data Message Payload</label>
+                        <textarea id="contactMessage" required class="form-textarea" placeholder="Detail your infrastructure roadblock query structural components here..."></textarea>
+                        <span class="field-error-message" id="messageError">Payload field cannot execute empty</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary margin-top-20 full-width">Transmit Vector Packet</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 CYBERPODIUM. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

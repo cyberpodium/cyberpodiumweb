@@ -1,391 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CYBERPODIUM | Learn AWS & Cloud Computing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBERPODIUM | Master AWS, Cloud Computing & DevOps</title>
+    <meta name="description" content="Advance your career with hands-on labs in AWS, DevOps, Kubernetes, and AI. Learn, build, and innovate with premium tech workflows.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CYBERPODIUM | Master AWS, Cloud Computing & DevOps">
+    <meta property="og:description" content="Advance your career with hands-on labs in AWS, DevOps, Kubernetes, and AI.">
+    <meta property="og:image" content="https://cyberpodium.com/assets/images/og-image.jpg">
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="CYBERPODIUM | Master AWS, Cloud & DevOps">
+    <meta property="twitter:description" content="Advance your career with hands-on labs in AWS, DevOps, Kubernetes, and AI.">
 
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    background:#07111f;
-    color:white;
-}
-
-header{
-    position:fixed;
-    width:100%;
-    top:0;
-    left:0;
-    background:rgba(7,17,31,.95);
-    backdrop-filter:blur(10px);
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 8%;
-    z-index:1000;
-    border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.logo{
-    font-size:28px;
-    font-weight:bold;
-    color:#00d4ff;
-}
-
-nav a{
-    text-decoration:none;
-    color:white;
-    margin-left:25px;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#00d4ff;
-}
-
-.hero{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:120px 20px 80px;
-    background:
-    radial-gradient(circle at top,#00d4ff33,transparent 40%),
-    linear-gradient(135deg,#07111f,#0d2b4f,#07111f);
-}
-
-.hero h1{
-    font-size:60px;
-    margin-bottom:20px;
-}
-
-.hero h1 span{
-    color:#00d4ff;
-}
-
-.hero p{
-    max-width:700px;
-    margin:auto;
-    line-height:1.8;
-    color:#d6d6d6;
-    font-size:18px;
-}
-
-.buttons{
-    margin-top:35px;
-}
-
-.btn{
-    display:inline-block;
-    margin:10px;
-    padding:15px 28px;
-    text-decoration:none;
-    border-radius:30px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.primary{
-    background:#00d4ff;
-    color:black;
-}
-
-.secondary{
-    border:2px solid #00d4ff;
-    color:white;
-}
-
-.btn:hover{
-    transform:translateY(-4px);
-}
-
-section{
-    padding:80px 8%;
-}
-
-.section-title{
-    text-align:center;
-    font-size:36px;
-    margin-bottom:40px;
-    color:#00d4ff;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:#101b30;
-    border-radius:16px;
-    padding:30px;
-    transition:.3s;
-    border:1px solid rgba(255,255,255,.08);
-}
-
-.card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 15px 30px rgba(0,212,255,.15);
-}
-
-.card h3{
-    margin-bottom:15px;
-    color:#00d4ff;
-}
-
-.stats{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:20px;
-    text-align:center;
-}
-
-.stat{
-    background:#101b30;
-    padding:30px;
-    border-radius:15px;
-}
-
-.stat h2{
-    color:#00d4ff;
-    font-size:42px;
-}
-
-.tech{
-    display:flex;
-    flex-wrap:wrap;
-    gap:15px;
-    justify-content:center;
-}
-
-.tech span{
-    background:#101b30;
-    padding:12px 22px;
-    border-radius:30px;
-    border:1px solid rgba(255,255,255,.08);
-}
-
-footer{
-    text-align:center;
-    padding:40px 20px;
-    background:#050b15;
-    margin-top:40px;
-    color:#bbb;
-}
-
-@media(max-width:768px){
-
-header{
-    flex-direction:column;
-}
-
-nav{
-    margin-top:15px;
-}
-
-nav a{
-    display:inline-block;
-    margin:8px;
-}
-
-.hero h1{
-    font-size:40px;
-}
-
-.hero p{
-    font-size:16px;
-}
-
-}
-</style>
-
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@700;900&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
-
 <body>
 
-<header>
+    <!-- Canvas Background Layer -->
+    <canvas id="particles-canvas"></canvas>
 
-<div class="logo">CYBERPODIUM</div>
+    <!-- Global Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
 
-<nav>
-<a href="#">Home</a>
-<a href="#about">About</a>
-<a href="#courses">Courses</a>
-<a href="#tech">Tech</a>
-<a href="#contact">Contact</a>
-</nav>
+    <!-- Sticky Navigation -->
+    <nav class="navbar" id="mainNavbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">
+                <span class="logo-icon"><i class="fa-solid fa-terminal"></i></span>
+                CYBER<span class="gradient-text">PODIUM</span>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="tutorials.html" class="nav-link">Tutorials</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <div class="nav-search-container">
+                    <input type="text" class="search-input" placeholder="Search resources...">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </div>
+            </div>
 
-</header>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="courses.html" class="btn btn-primary nav-cta">Get Started</a>
+                <button class="hamburger-menu" id="hamburger" aria-label="Open menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-<section class="hero">
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-glow-overlay-1"></div>
+        <div class="hero-glow-overlay-2"></div>
+        <div class="container hero-container">
+            <div class="hero-content reveal-slide-up">
+                <div class="badge-premium">
+                    <span class="badge-dot"></span> Next-Gen Tech Platform
+                </div>
+                <h1>Master <span class="gradient-text">AWS, Cloud</span> <br>& DevOps Ecosystems</h1>
+                <p class="hero-subtitle">
+                    Hands-on production architecture learning pipelines engineered for developers, architects, and automation specialists. <span id="typing-text"></span>
+                </p>
+                <div class="hero-actions">
+                    <a href="courses.html" class="btn btn-primary ripple">Start Learning <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="https://youtube.com" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-youtube text-red"></i> Visit YouTube</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="cyber-cube-container">
+                    <div class="floating-tech-icon icon-aws"><i class="fa-brands fa-aws"></i></div>
+                    <div class="floating-tech-icon icon-docker"><i class="fa-brands fa-docker"></i></div>
+                    <div class="floating-tech-icon icon-python"><i class="fa-brands fa-python"></i></div>
+                    <div class="floating-tech-icon icon-linux"><i class="fa-brands fa-linux"></i></div>
+                    <div class="matrix-card glass-card">
+                        <div class="card-header-bar">
+                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                            <span class="terminal-title">cp-engine --prod</span>
+                        </div>
+                        <pre class="code-block"><code><span class="c-keyword">import</span> cyberpodium <span class="c-keyword">as</span> cp
 
-<div>
+user = cp.Engineer(level=<span class="c-str">"ambitious"</span>)
+path = cp.CloudDevOpsPipeline()
 
-<h1>Master <span>AWS</span>, Cloud & DevOps</h1>
+<span class="c-keyword">while not</span> user.is_expert():
+    user.learn(path.next_module())
+    user.build(production_ready=<span class="c-bool">True</span>)
+    user.innovate()</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-<p>
+    <!-- Global Statistics Section -->
+    <section class="stats-section">
+        <div class="container grid-4">
+            <div class="stat-card glass-card reveal-fade">
+                <h3 class="stat-number" data-target="100">0</h3>
+                <p class="stat-label">Architectural Tutorials</p>
+            </div>
+            <div class="stat-card glass-card reveal-fade">
+                <h3 class="stat-number" data-target="50">0</h3>
+                <p class="stat-label">Production Projects</p>
+            </div>
+            <div class="stat-card glass-card reveal-fade">
+                <h3 class="stat-number" data-target="10000">0</h3>
+                <p class="stat-label">Active Engineers</p>
+            </div>
+            <div class="stat-card glass-card reveal-fade">
+                <h3 class="stat-number" data-target="20">0</h3>
+                <p class="stat-label">Expert Curations</p>
+            </div>
+        </div>
+    </section>
 
-Learn AWS, Python, DevOps, Linux, Automation, AI and Cloud Computing through practical tutorials,
-real-world projects and interview preparation.
+    <!-- Technologies Grid Section -->
+    <section class="tech-section container">
+        <div class="section-header text-center">
+            <h2 class="section-title">Technological Ecosystem Roadmap</h2>
+            <p class="section-subtitle">We specialize deep-dive curriculums across critical enterprise tech stacks.</p>
+        </div>
+        <div class="grid-5 tech-grid">
+            <div class="tech-card glass-card-hover text-center">
+                <div class="tech-icon-wrapper color-aws"><i class="fa-brands fa-aws"></i></div>
+                <h4>AWS</h4>
+            </div>
+            <div class="tech-card glass-card-hover text-center">
+                <div class="tech-icon-wrapper color-docker"><i class="fa-brands fa-docker"></i></div>
+                <h4>Docker</h4>
+            </div>
+            <div class="tech-card glass-card-hover text-center">
+                <div class="tech-icon-wrapper color-kube"><i class="fa-solid fa-cubes"></i></div>
+                <h4>Kubernetes</h4>
+            </div>
+            <div class="tech-card glass-card-hover text-center">
+                <div class="tech-icon-wrapper color-terraform"><i class="fa-solid fa-layer-group"></i></div>
+                <h4>Terraform</h4>
+            </div>
+            <div class="tech-card glass-card-hover text-center">
+                <div class="tech-icon-wrapper color-python"><i class="fa-brands fa-python"></i></div>
+                <h4>Python</h4>
+            </div>
+        </div>
+    </section>
 
-</p>
+    <!-- Featured Courses Section -->
+    <section class="courses-section container">
+        <div class="section-header flex-between">
+            <div>
+                <h2 class="section-title">Featured Learning Programs</h2>
+                <p class="section-subtitle">Structured paths engineered to transition you directly into cloud workflows.</p>
+            </div>
+            <a href="courses.html" class="btn btn-secondary">Explore All Programs</a>
+        </div>
+        <div class="grid-3 row-gap-30">
+            <!-- Card 1 -->
+            <div class="course-card glass-card showcase-card">
+                <div class="card-img-container">
+                    <div class="course-badge text-glow-blue">ADVANCED</div>
+                    <div class="fallback-gradient-bg bg-aws"></div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">AWS Solution Architect Production Masterclass</h3>
+                    <p class="card-text">Design secure, fault-tolerant enterprise ecosystems using multi-region scaling.</p>
+                    <div class="card-meta">
+                        <span><i class="fa-regular fa-clock"></i> 42 Hours</span>
+                        <span><i class="fa-solid fa-chart-line"></i> Advanced</span>
+                    </div>
+                    <a href="courses.html" class="btn btn-primary full-width">Initialize Course</a>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="course-card glass-card showcase-card">
+                <div class="card-img-container">
+                    <div class="course-badge text-glow-purple">INTERMEDIATE</div>
+                    <div class="fallback-gradient-bg bg-devops"></div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">GitOps: Production Gitlab & Kubernetes Pipelines</h3>
+                    <p class="card-text">Automate cluster configurations dynamically utilizing Docker, ArgoCD, and Kubernetes.</p>
+                    <div class="card-meta">
+                        <span><i class="fa-regular fa-clock"></i> 30 Hours</span>
+                        <span><i class="fa-solid fa-chart-line"></i> Intermediate</span>
+                    </div>
+                    <a href="courses.html" class="btn btn-primary full-width">Initialize Course</a>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="course-card glass-card showcase-card">
+                <div class="card-img-container">
+                    <div class="course-badge text-glow-cyan">BEGINNER</div>
+                    <div class="fallback-gradient-bg bg-infra"></div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Infrastructure as Code with HashiCorp Terraform</h3>
+                    <p class="card-text">Provision structural computing networks multi-cloud safely via modular architecture blueprints.</p>
+                    <div class="card-meta">
+                        <span><i class="fa-regular fa-clock"></i> 18 Hours</span>
+                        <span><i class="fa-solid fa-chart-line"></i> Beginner</span>
+                    </div>
+                    <a href="courses.html" class="btn btn-primary full-width">Initialize Course</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="buttons">
+    <!-- Learning Roadmap Section -->
+    <section class="roadmap-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">The Engineered Learning Pipeline</h2>
+                <p class="section-subtitle">Our structural sequence to guide engineers up the technical maturity chain.</p>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                <div class="timeline-item left reveal-fade">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="step-num">01</span>
+                        <h4>Linux & Core Networking Foundations</h4>
+                        <p>Master terminal execution engines, DNS frameworks, Bash automations, and system configurations.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right reveal-fade">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="step-num">02</span>
+                        <h4>Programming & Scripting Core (Python)</h4>
+                        <p>Write robust runtime structures, automated operational pipelines, and REST integration interfaces.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left reveal-fade">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="step-num">03</span>
+                        <h4>Enterprise Cloud Engineering (AWS)</h4>
+                        <p>Implement IAM hierarchies, high-availability VPC networks, EC2 computing instances, and serverless architectures.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right reveal-fade">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="step-num">04</span>
+                        <h4>Container Infrastructure & GitOps Automation</h4>
+                        <p>Build optimal isolated micro-environments via Docker, orchestrate deployments with Kubernetes, and maintain IaC with Terraform.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<a class="btn primary" href="#">Start Learning</a>
+    <!-- Value Propositions (Why CyberPodium) -->
+    <section class="why-section container">
+        <div class="section-header text-center">
+            <h2 class="section-title">Why Enterprise Candidates Choose Us</h2>
+            <p class="section-subtitle">We bridge the divide between theoretical validation and modern production reality.</p>
+        </div>
+        <div class="grid-3 row-gap-30">
+            <div class="feature-card glass-card">
+                <div class="feature-icon"><i class="fa-solid fa-microchip"></i></div>
+                <h3>Practical Architecture Focus</h3>
+                <p>No basic syntax tutorials. We deploy real infrastructure nodes designed for scale.</p>
+            </div>
+            <div class="feature-card glass-card">
+                <div class="feature-icon"><i class="fa-solid fa-language"></i></div>
+                <h3>Bilingual Precision (Hindi/English)</h3>
+                <p>Deep engineering paradigms explained with relatable clarity for optimal retention.</p>
+            </div>
+            <div class="feature-card glass-card">
+                <div class="feature-icon"><i class="fa-solid fa-folder-open"></i></div>
+                <h3>Production Capstone Pipelines</h3>
+                <p>Build dynamic systems you can actually push live to your public structural portfolio.</p>
+            </div>
+        </div>
+    </section>
 
-<a class="btn secondary" href="#">YouTube Channel</a>
+    <!-- Testimonials Section -->
+    <section class="testimonials-section container">
+        <div class="section-header text-center">
+            <h2 class="section-title">Endorsed by Engineers WorldWide</h2>
+        </div>
+        <div class="carousel-wrapper">
+            <div class="carousel-track" id="testimonialTrack">
+                <div class="testimonial-card glass-card">
+                    <p class="quote">"The Terraform modules alone saved my production launch lifecycle. The technical precision here rivals any corporate enterprise training pipeline."</p>
+                    <div class="user-meta">
+                        <div class="user-avatar"><i class="fa-solid fa-user-shield"></i></div>
+                        <div>
+                            <h4>Vikram Malhotra</h4>
+                            <span class="user-title">Senior DevOps Engineer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card">
+                    <p class="quote">"Switching to Cloud Infrastructure was terrifying until I executed CYBERPODIUM's live AWS multi-tier architectural lab sequences."</p>
+                    <div class="user-meta">
+                        <div class="user-avatar"><i class="fa-solid fa-user-astronaut"></i></div>
+                        <div>
+                            <h4>Sarah Jenkins</h4>
+                            <span class="user-title">Cloud Infrastructure Analyst</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button class="nav-arrow prev" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="nav-arrow next" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
 
-</div>
+    <!-- Newsletter & Interactive FAQ Section -->
+    <section class="faq-newsletter container grid-2">
+        <div class="faq-accordion glass-card">
+            <h3>Frequently Answered Metrics</h3>
+            <div class="accordion-item">
+                <div class="accordion-header">Are these courses structured for beginners? <i class="fa-solid fa-plus"></i></div>
+                <div class="accordion-body"><p>Yes, each path kicks off with foundational layers before progressing into deep structural production paradigms.</p></div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Do we receive architectural code files? <i class="fa-solid fa-plus"></i></div>
+                <div class="accordion-body"><p>Absolutely. You receive comprehensive GitHub access to all Terraform scripts, Docker configurations, and automation manifests.</p></div>
+            </div>
+        </div>
 
-</div>
+        <div class="newsletter-card glass-card flex-center flex-column text-center">
+            <div class="newsletter-icon"><i class="fa-regular fa-paper-plane"></i></div>
+            <h3>Join the Architecture Feed</h3>
+            <p>Get optimized system engineering designs directly into your inbox weekly.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Enter secure email address" required class="form-input">
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
 
-</section>
+    <!-- Central CTA Section -->
+    <section class="cta-section container text-center">
+        <div class="cta-glow"></div>
+        <div class="cta-content glass-card">
+            <h2>Accelerate Your Engineering Velocity Now</h2>
+            <p>Unlock structured technical content engineered specifically to fast-track modern architectural validation paths.</p>
+            <div class="flex-center gap-20 wrap-mobile">
+                <a href="courses.html" class="btn btn-primary text-large">Launch Cloud Journey</a>
+                <a href="https://youtube.com" class="btn btn-secondary text-large"><i class="fa-brands fa-youtube"></i> Stream Live Content</a>
+            </div>
+        </div>
+    </section>
 
-<section id="about">
+    <!-- Global Footer -->
+    <footer class="main-footer">
+        <div class="container grid-4">
+            <div class="footer-brand-column">
+                <a href="index.html" class="brand-logo footer-logo">CYBER<span class="gradient-text">PODIUM</span></a>
+                <p class="footer-desc">Premium engineering knowledge spaces optimized for systemic infrastructure excellence.</p>
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Ecosystem</h4>
+                <ul class="footer-links">
+                    <li><a href="courses.html">AWS Masterclass</a></li>
+                    <li><a href="courses.html">Kubernetes Orchestration</a></li>
+                    <li><a href="courses.html">DevOps Automation</a></li>
+                    <li><a href="courses.html">Python Engine</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Identity</a></li>
+                    <li><a href="blog.html">Technical Blog</a></li>
+                    <li><a href="projects.html">Open Repositories</a></li>
+                    <li><a href="contact.html">Contact Terminal</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Compliance & Sovereignty</h4>
+                <ul class="footer-links">
+                    <li><a href="privacy.html">Privacy Matrix</a></li>
+                    <li><a href="terms.html">Terms of Engine</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 CYBERPODIUM. All Rights Reserved. Engineered gracefully via Vanilla Standards.</p>
+        </div>
+    </footer>
 
-<h2 class="section-title">Why CYBERPODIUM?</h2>
+    <!-- Back to Top Trigger -->
+    <button class="back-to-top" id="backToTop" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
 
-<div class="grid">
+    <!-- Global Cookie Notice Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <p><i class="fa-solid fa-cookie-bite text-glow-blue"></i> This infrastructure utilizes diagnostic cookies to elevate global UX telemetry. <a href="privacy.html" class="gradient-text">Read Matrix Details</a></p>
+            <button class="btn btn-primary btn-small" id="acceptCookies">Authorize</button>
+        </div>
+    </div>
 
-<div class="card">
-<h3>Beginner Friendly</h3>
-<p>Simple explanations in Hindi with hands-on practical demonstrations.</p>
-</div>
-
-<div class="card">
-<h3>Industry Projects</h3>
-<p>Learn by building real cloud solutions using AWS services.</p>
-</div>
-
-<div class="card">
-<h3>Interview Preparation</h3>
-<p>AWS interview questions, coding examples and certification guidance.</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="section-title">Our Numbers</h2>
-
-<div class="stats">
-
-<div class="stat">
-<h2>100+</h2>
-<p>Tutorial Videos</p>
-</div>
-
-<div class="stat">
-<h2>20+</h2>
-<p>Hands-on Projects</p>
-</div>
-
-<div class="stat">
-<h2>10+</h2>
-<p>Learning Paths</p>
-</div>
-
-<div class="stat">
-<h2>24×7</h2>
-<p>Learning Support</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="courses">
-
-<h2 class="section-title">Featured Courses</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>AWS Beginner Course</h3>
-<p>Complete AWS from scratch including EC2, S3, IAM, Lambda, VPC and more.</p>
-</div>
-
-<div class="card">
-<h3>Python Programming</h3>
-<p>Python basics to automation with practical examples.</p>
-</div>
-
-<div class="card">
-<h3>DevOps Roadmap</h3>
-<p>Docker, Kubernetes, CI/CD, Terraform and Infrastructure as Code.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="tech">
-
-<h2 class="section-title">Technologies</h2>
-
-<div class="tech">
-
-<span>AWS</span>
-<span>Python</span>
-<span>Linux</span>
-<span>Docker</span>
-<span>Kubernetes</span>
-<span>Terraform</span>
-<span>CloudFormation</span>
-<span>Git</span>
-<span>DevOps</span>
-<span>AI</span>
-
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2 class="section-title">Join CYBERPODIUM</h2>
-
-<div class="card" style="max-width:700px;margin:auto;text-align:center;">
-
-<p style="margin-bottom:20px">
-
-Subscribe to our YouTube channel and follow us for the latest AWS tutorials,
-cloud projects and technology updates.
-
-</p>
-
-<a class="btn primary" href="#">Visit YouTube</a>
-
-</div>
-
-</section>
-
-<footer>
-
-<h3 style="color:#00d4ff;margin-bottom:10px;">CYBERPODIUM</h3>
-
-<p>Learn • Build • Innovate</p>
-
-<br>
-
-<p>© 2026 CYBERPODIUM. All Rights Reserved.</p>
-
-</footer>
-
+    <!-- Script Loads -->
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

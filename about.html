@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | CYBERPODIUM Identity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+    
+    <!-- Navbar -->
+    <nav class="navbar" id="mainNavbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">CYBER<span class="gradient-text">PODIUM</span></a>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="tutorials.html" class="nav-link">Tutorials</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+                <button class="hamburger-menu" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Subpage Main Content -->
+    <main class="subpage-wrapper container">
+        <div class="section-header text-center reveal-slide-up">
+            <h1 class="section-title">The Engineering Identity</h1>
+            <p class="section-subtitle">Democratizing elite systems operational scaling competencies across global developer teams.</p>
+        </div>
+
+        <section class="about-grid grid-2 alignment-center">
+            <div class="glass-card padded-large reveal-fade">
+                <h3>Our Core Mission Manifesto</h3>
+                <p>CYBERPODIUM was conceptualized to dissolve the friction vectors separating enterprise infrastructure teams from aspiring cloud developers. We bypass superficial abstraction layers, delivering granular, operational insights straight to your development workstation.</p>
+                <p>We do not train passing students; we cultivate persistent production engineers capable of deploying high-availability cloud frameworks on day one.</p>
+            </div>
+            <div class="interactive-identity-wrapper glass-card flex-center">
+                <div class="rotating-branding-mesh"><i class="fa-solid fa-shield-halved text-glow-blue large-icon"></i></div>
+            </div>
+        </section>
+
+        <!-- Executive Leadership Grid -->
+        <section class="team-section">
+            <div class="section-header text-center">
+                <h2>Architectural Instructors</h2>
+            </div>
+            <div class="grid-3 row-gap-30">
+                <div class="team-card glass-card text-center">
+                    <div class="member-avatar-wrapper"><i class="fa-solid fa-user-astronaut"></i></div>
+                    <h4>Alex Rivers</h4>
+                    <p class="user-title text-glow-blue">Principal DevOps Architect</p>
+                    <p class="small-text-muted">Ex-AWS Lead Infrastructure Systems Designer.</p>
+                </div>
+                <div class="team-card glass-card text-center">
+                    <div class="member-avatar-wrapper"><i class="fa-solid fa-user-ninja"></i></div>
+                    <h4>Devanand Sharma</h4>
+                    <p class="user-title text-glow-purple">Core Systems Instructor</p>
+                    <p class="small-text-muted">Specializes in Linux optimization matrices and Cloud Automation pipelines.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 CYBERPODIUM. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
